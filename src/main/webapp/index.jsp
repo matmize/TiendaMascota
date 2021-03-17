@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello Heroku!</h2>
+<h2>ENCUESTA COVID 19</h2>
 </body>
 </html>

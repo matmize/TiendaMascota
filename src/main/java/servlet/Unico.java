@@ -10,7 +10,7 @@ public class Unico {
 
 	public Unico(){
 	}
-	public static todo crear(){
+	public static Unico crear(){
 		if (unico == null )
 				unico = new Unico
 		return unico;

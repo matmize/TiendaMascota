@@ -9,7 +9,7 @@ public class Proyecto{
 	public static Proyecto crear(){
 
 		if (proyecto == null);
-			proyecto = new Proyecto()
+			proyecto = new Proyecto();
 		return proyecto;
 	}
 

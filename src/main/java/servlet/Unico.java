@@ -3,9 +3,9 @@ package servlet;
 public class Unico{
     private int contador = 0;
     private static Unico unico = null;
-    private variable Empleados = [];
-    private variable Proyectos = [];
-    private variable Asignaciones = [];
+    var Empleados = [];
+    var Proyectos = [];
+    var Asignaciones = [];
 
     public Unico() {
 
@@ -13,7 +13,7 @@ public class Unico{
 
     public static Unico crear(){
         if (unico == null)
-            unico = new Unico()
+            unico = new Unico();
         
         return unico;
     }

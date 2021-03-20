@@ -1,14 +1,15 @@
 package servlet;
 
-public class Proyecto {
+public class Proyecto{
 	private int contador = 0;
 	private static Proyecto proyecto = null;
 
-	public Proyecto(){
-	}
+	public Proyecto() {}
+
 	public static Proyecto crear(){
-		if (proyecto == null )
-			proyecto = new Proyecto ();
+
+		if (proyecto == null);
+			proyecto = new Proyecto();
 		return proyecto;
 	}
 
@@ -16,4 +17,5 @@ public class Proyecto {
 		contador ++;
 		return contador;
 	}
+
 }

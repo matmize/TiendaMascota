@@ -5,7 +5,7 @@
 
 <body>
 
-    <%@page import = "servlet.html" %>
+    <%@page import = "servlet.*" %>
 
     <%
 

@@ -9,7 +9,7 @@ public class Asignacion {
 
 	public static Asignacion crear(){
 		if (asignacion == null);
-			asignacion = new Asignacion();
+			asignacion = new Asignacion()
 			return asignacion;
 	}
 	public int getContador(){

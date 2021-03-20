@@ -8,7 +8,7 @@ public class Empleado{
 
 	public static Empleado crear(){
 		if (empleado == null);
-			empleado = new Empleado();
+			empleado = new Empleado()
 		return empleado;
 	}
 	public int getContador(){

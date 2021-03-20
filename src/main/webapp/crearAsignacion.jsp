@@ -16,7 +16,7 @@
     Unico u =Unico.crear();
     Asignacion a =Asignacion.crear();
 
-    out.println("el Unico me devuelve" + u.getContador());
+    out.println(" el Unico me devuelve " + u.getContador());
     
     
     

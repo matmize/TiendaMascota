@@ -12,9 +12,9 @@ public class Unico{
     }
 
     public static Unico crear(){
-        if (unico == null){
+        if (unico == null)
             unico = new Unico();
-        }
+        
         return unico;
     }
     public int getContador(){

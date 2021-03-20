@@ -3,9 +3,9 @@ package servlet;
 public class Unico{
     private int contador = 0;
     private static Unico unico = null;
-    ArrayList<Empleado> empleados = new ArrayList<>();
-    ArrayList<Proyecto> proyectos = new ArrayList<>();
-    ArrayList<Asignacion> asignaciones = new ArrayList<>();
+    Empleado e[] = new Empleado[100];
+    Proyecto p[] = new Proyecto[100];
+    Asignacion a[] = new Asignacion[100];
 
     public Unico() {
 

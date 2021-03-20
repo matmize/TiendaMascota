@@ -6,9 +6,9 @@ public class Asignacion {
 
 	public Asignacion(){
 	}
-	public static asignacion crear(){
+	public static Asignacion crear(){
 		if (asignacion == null )
-				asignacion = new Asignacion
+			asignacion = new Asignacion ();
 		return asignacion;
 	}
 

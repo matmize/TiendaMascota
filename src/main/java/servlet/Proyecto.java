@@ -6,9 +6,9 @@ public class Proyecto {
 
 	public Proyecto(){
 	}
-	public static proyecto crear(){
+	public static Proyecto crear(){
 		if (proyecto == null )
-				proyecto = new Proyecto
+			proyecto = new Proyecto ();
 		return proyecto;
 	}
 

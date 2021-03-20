@@ -8,7 +8,7 @@ public class Empleado {
 	}
 	public static empleado crear(){
 		if (empleado == null )
-				empleado = new Empleado
+			empleado = new Empleado ();
 		return empleado;
 	}
 

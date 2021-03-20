@@ -17,7 +17,7 @@
     Proyecto p = Proyecto.crear();
 
     out.println("el Unico me devuelve" + u.getContador());
-    out.println(" El proyecto que usted ha creado es : " + p.getNombre())+ " con el numero de id de :  " + p.getId() + " tiene un presupuesto de : " + p.getPresupuesto());
+  
     
     
     

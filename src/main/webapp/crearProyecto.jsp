@@ -14,7 +14,7 @@
     String tiempo = request.getParameter("tiempo");
 
     Unico u = Unico.crear();
-    Proyecto p = Proyecto.crear();
+   
 
     out.println("el nombre del empleado que contrato es : " + u.getNombre() );
   

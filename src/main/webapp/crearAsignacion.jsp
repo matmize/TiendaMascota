@@ -17,7 +17,7 @@
   
 
     out.println(" el Unico me devuelve " + u.getContador());
-    out.println(" el id de la asignacion es " + u.getId() + " y el id del empleado es " + u.getIdE() );
+ 
     
     
     

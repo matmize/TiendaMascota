@@ -3,7 +3,9 @@ package servlet;
 public class Unico{
     private int contador = 0;
     private static Unico unico = null;
-   
+    Empleado e [] = new Empleado[];
+    Proyecto p [] = new Proyecto[];
+    Asignacion a[] = new Asignacion[];
 
     public Unico() {
 

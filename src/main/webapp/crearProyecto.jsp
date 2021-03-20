@@ -16,7 +16,7 @@
     Unico u = Unico.crear();
     Proyecto p = Proyecto.crear();
 
-    out.println("el Unico me devuelve" + u.getContador());
+    out.println("el nombre del empleado que contrato es : " + u.getNombre() );
   
     
     

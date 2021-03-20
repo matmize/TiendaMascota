@@ -14,10 +14,10 @@
     String apellido = request.getParameter("apellido");
     String habilidad = request.getParameter("habilidad");
 
-    Empleado e=Empleado.crear();
+    Unico u =Unico.crear();
 
-   
-    out.println(" El nombre del empleado que acaba de contratar es : " e.getNombre());
+    out.println("el Unico me devuelve  " + u.getContador());
+  
     
     
     

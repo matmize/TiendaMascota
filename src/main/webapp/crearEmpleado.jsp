@@ -18,6 +18,7 @@
     Empleado e=Empleado.crear();
 
     out.println("el Unico me devuelve  " + u.getContador());
+    out.println(" El nombre del empleado que acaba de contratar es : " e.getNombre());
     
     
     

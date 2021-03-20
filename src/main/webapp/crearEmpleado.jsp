@@ -15,9 +15,9 @@
     String habilidad = request.getParameter("habilidad");
 
     Unico u =Unico.crear();
-    Empleado e =Empleado.crear();
+ 
 
-    out.println("el Unico me devuelve" + u.getContador());
+    out.println("el Unico me devuelve  " + u.getContador());
     
     
     

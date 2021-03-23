@@ -1,21 +1,17 @@
 package servlet;
 
 public class Proyecto{
-	private int contador = 0;
-	private static Proyecto proyecto = null;
+	
+	int id;
+	String nombre;
+	int presupuesto;
+	String tiempo;
 
-	public Proyecto() {}
+	public Proyecto (int id, String nombre, int presupuesto, String tiempo) {
 
-	public static Proyecto crear(){
-
-		if (proyecto == null);
-			proyecto = new Proyecto();
-		return proyecto;
+		this.idProyecto = id;
+		this.nombreProyecto = nombre;
+		this.presupuesto = presupuesto;
+		this.tiempo = tiempo;
 	}
-
-	public int getContador(){
-		contador ++;
-		return contador;
-	}
-
 }

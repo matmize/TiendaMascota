@@ -1,19 +1,16 @@
 package servlet;
 
 public class Asignacion {
-	private int contador = 0;
-	private static Asignacion asignacion = null;
+	public String idemp;
+	public int idProy;
+	public int horas;
+	public String duty;
 
-
-	public Asignacion(){}
-
-	public static Asignacion crear(){
-		if (asignacion == null);
-			asignacion = new Asignacion();
-		return asignacion;
+	public Asignacion(String idEmpleado,int idProyecto,int tiempo,String responsabilidades){
+		this.idemp = idEmpleado;
+		this.idProy= idProyecto;
+		this.worktime = tiempo;
+		this.duty = responsabilidades;
 	}
-	public int getContador(){
-		contador ++;
-		return contador;
-	}
+	
 }

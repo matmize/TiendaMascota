@@ -58,10 +58,11 @@ public class Unico{
                             }
                             asignaciones.get(j).idemp = nemp;
                             j++;
-                    }else {
+                     }else {
                         if (Integer.ParseInt()emp[0]==id){
                             asignaciones.remove(j);
                             j=0;
+                            }
                         }
                     }
                 }
@@ -76,5 +77,5 @@ public class Unico{
     
 
   
-    }   
+    
 }

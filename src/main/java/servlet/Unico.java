@@ -8,7 +8,6 @@ public class Unico{
     private ArrayList<Proyecto>proyectos = new ArrayList();
     private ArrayList<Asignacion>asignaciones = new ArrayList();
 
-    private Unico (){}
 
     public void creatEmpleado (ind id, String nombre, String habilidades){
         Empledo empleado = new Empledo (id, nombre, habilidades);

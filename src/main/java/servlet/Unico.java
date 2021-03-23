@@ -9,10 +9,6 @@ public class Unico{
     private ArrayList<Asignacion>asignaciones = new ArrayList();
 
     private Unico (){}
-    public Static Unico getInstance(){
-        
-
-    }
 
     public void creatEmpleado (ind id, String nombre, String habilidades){
         Empledo empleado = new Empledo (id, nombre, habilidades);

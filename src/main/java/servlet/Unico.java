@@ -9,7 +9,7 @@ public class Unico{
     private ArrayList<Asignacion>asignaciones = new ArrayList();
 
 
-    public void creatEmpleado (ind id, String nombre, String habilidades){
+    public void crearEmpleado (int id, String nombre, String habilidades){
         Empledo empleado = new Empledo (id, nombre, habilidades);
         empleados.add(empleado);
     }
@@ -68,4 +68,13 @@ public class Unico{
             }
         }
     }
+
+    public void crearProyecto (int id, String nombre,int presupuesto,String tiempo){
+        Proyecto proyecto = new Proyecto (id,nombre,presupuesto,tiempo);
+        proyectos.add(proyecto);
+    }
+    
+
+  
+    }   
 }

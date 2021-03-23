@@ -1,6 +1,7 @@
 package servlet;
 
 public class Empleado{
+	
 	public int id;
 	public String nombre;
 	public String habilidades;

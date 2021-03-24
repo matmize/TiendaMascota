@@ -48,7 +48,7 @@ public class Unico{
                 return empleado;
             }
         }else{
-            Empleado empleado = new Empleado (-100,"-",'-');
+            Empleado empleado = new Empleado (-100,"-","-");
             return empleado;
         }
     }

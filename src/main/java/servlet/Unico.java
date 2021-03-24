@@ -181,14 +181,14 @@ public class Unico{
             if (asignaciones.get(i).id == id){
                 asignaciones.remove(i);
             } else{
-                Asignacion asignacion= new Asignacion (-100,0,0,0,"-");
+                Asignacion asignacion = new Asignacion (-100,0,0,0,"-");
             }
         }
     }
 
     public void editarAsignacion (int id, String idemp, int idProy,int horas,String responsabilidades){
         for (int i =0; i<asignaciones.size();i++){
-            if (IdProy == asignaciones.get(i).idProy){
+            if (idProy == asignaciones.get(i).idProy){
                 asignaciones.get(i).idemp = idemp;
                 asignaciones.get(i).horas = horas;
                 asignaciones.get(i).responsabilidades = responsabilidades;

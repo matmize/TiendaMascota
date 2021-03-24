@@ -89,7 +89,7 @@ public class Unico{
     public void editarEmpleado(int id, String nombre, String habilidades){
         for (int i =0; i<empleados.size();i++){
             if (id == empleados.get(i).idEmpleado){
-                empleados.get(i).nombre = nombre;
+                empleados.get(i).nombreEmpleado = nombre;
                 empleados.get(i).habilidades = habilidades;
             }
         }
@@ -97,7 +97,7 @@ public class Unico{
     }
 
     public void crearProyecto (int id, String empresa,int presupuesto,String tiempo){
-        Proyecto proyecto = new Proyecto (id,nombre,presupuesto,tiempo);
+        Proyecto proyecto = new Proyecto (id,empresa,presupuesto,tiempo);
         proyectos.add(proyecto);
     }
     public Proyecto buscarProyecto (int id ){
@@ -112,9 +112,9 @@ public class Unico{
                 }
             }
             if (count == 1 ){
-                return proyecto.get(locate);
+                return proyectos.get(locate);
             }else{
-                Proyecto proyecto= new Proyecto (-100,"-",0,"-");
+                Proyecto proyectos= new Proyecto (-100,"-",0,"-");
                 return proyecto;
             }
         }else{
@@ -145,9 +145,9 @@ public class Unico{
 
     }
 
-    public void crearAsignacion (int idEmpleado, int idProyecto,int tiempo,String responsabilidades){
-        Asignacion asignacion = new Asignacion (idEmpleado,idProyecto,tiempo,responsabilidades);
-        asignaciones.add(asignacion);
+    public void crearAsignacion (int id, int idemp, int idProy,int tiempo,String responsabilidades){
+        Asignacion asignacion = new Asignacion (id,idEmpleado,idProyecto,tiempo,responsabilidades);
+            asignaciones.add(asignacion);
     }
 
     public Asignacion buscarAsignacion (int id ){
@@ -174,7 +174,7 @@ public class Unico{
 
     }
 
-    public void eliminarAsignacion (int id, String idEmpleado, int idProyecto,int tiempo,String responsabilidades){
+    public void eliminarAsignacion (int id, String idemp, int idProy,int tiempo,String responsabilidades){
          for (int i =0; i< asiganciones.size();i++){
             if (asigancion.get(i).idAsignacion == id){
                 asiganciones.remove(i);

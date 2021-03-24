@@ -162,7 +162,7 @@ public class Unico{
                 }
             }
             if (count == 1 ){
-                return asiganciones.get(locate);
+                return asignaciones.get(locate);
             }else{
 
 

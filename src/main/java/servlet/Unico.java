@@ -134,19 +134,19 @@ public class Unico{
 
 
     }
-    public void editarProyecto (int id, String empresa,int presupuesto,String tiempo){
+    public void editarProyecto (int idProyecto, String empresa,int presupuesto,String tiempo){
          for (int i =0; i<proyectos.size();i++){
             if (idProyecto== proyectos.get(i).idProyecto){
-                asignaciones.get(i).empresa = empresa;
-                asignaciones.get(i).presupuesto = presupuesto;
-                asignaciones.get(i).tiempo = tiempo;
+                proyectos.get(i).empresa = empresa;
+                proyectos.get(i).presupuesto = presupuesto;
+                proyectos.get(i).tiempo = tiempo;
             }
         }
 
     }
 
     public void crearAsignacion (int id, int idemp, int idProy,int horas,String responsabilidades){
-        Asignacion asignacion = new Asignacion (id,idemp,idProy,tiempo,responsabilidades);
+        Asignacion asignacion = new Asignacion (id,idemp,idProy,horas,responsabilidades);
         asignaciones.add(asignacion);
     }
 
@@ -188,9 +188,9 @@ public class Unico{
 
     public void editarAsignacion (int id, String idemp, int idProy,int horas,String responsabilidades){
         for (int i =0; i<asignaciones.size();i++){
-            if (idProyecto == asignaciones.get(i).idProyecto){
+            if (IdProy == asignaciones.get(i).idProy){
                 asignaciones.get(i).idemp = idemp;
-                asignaciones.get(i).hroas = horas;
+                asignaciones.get(i).horas = horas;
                 asignaciones.get(i).responsabilidades = responsabilidades;
             }
         }

@@ -18,7 +18,7 @@
         String responsabilidades = request.getParameter("responsabilidades");
 
         Unico u = Unico.crear();
-        out.println(" el Unico me devuelve " + u.getId());  
+        out.println(" el Unico me devuelve " + u.getid());  
     %>
 </body>
 </html>

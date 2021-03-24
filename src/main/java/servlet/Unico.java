@@ -114,7 +114,7 @@ public class Unico{
             if (count == 1 ){
                 return proyectos.get(locate);
             }else{
-                Proyecto proyectos= new Proyecto (-100,"-",0,"-");
+                Proyecto proyecto= new Proyecto (-100,"-",0,"-");
                 return proyecto;
             }
         }else{
@@ -125,10 +125,10 @@ public class Unico{
 
     public void eliminarProyecto (int id){
         for (int i =0; i< proyectos.size();i++){
-            if (proyecto.get(i).idProyecto == id){
+            if (proyectos.get(i).idProyecto == id){
                 proyectos.remove(i);
             } else{
-                Proyecto proyectos = new Proyecto (-100,"-",0,"-");
+                Proyecto proyecto = new Proyecto (-100,"-",0,"-");
             }
         }
 
@@ -136,7 +136,7 @@ public class Unico{
     }
     public void editarProyecto (int id, String empresa,int presupuesto,String tiempo){
          for (int i =0; i<proyectos.size();i++){
-            if (id== proyectos.get(i).idProyecto){
+            if (idProyecto== proyectos.get(i).idProyecto){
                 asignaciones.get(i).empresa = empresa;
                 asignaciones.get(i).presupuesto = presupuesto;
                 asignaciones.get(i).tiempo = tiempo;

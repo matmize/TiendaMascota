@@ -73,9 +73,9 @@ public class Unico{
                             asignaciones.get(j).idemp = nemp;
                             j++;
                      }else {
-                        if (Integer.ParseInt()emp[0]==id){
-                            asignaciones.remove(j);
-                            j=0;
+                        if (Integer.ParseInt()nemp[0]==id){
+                            	asignaciones.remove(j);
+                            	j=0;
                             }
                         }
                     }
@@ -103,7 +103,7 @@ public class Unico{
             int count = 0;
             int locate = 0;
 
-            for int (i = 0; i < proyectos.size();i++){
+            for  (int i = 0; i < proyectos.size();i++){
                 if (id == proyectos.get(i).idProyecto){
                     count++;
                     locate = i;
@@ -126,7 +126,7 @@ public class Unico{
             if (proyecto.get(i).idProyecto == id){
                 proyectos.remove(i);
             } else{
-                Proyectos proyectos = new Proyecto (-100,"-",0,"-")
+                Proyecto proyectos = new Proyecto (-100,"-",0,"-")
             }
         }
 
@@ -145,7 +145,7 @@ public class Unico{
 
     public void crearAsignacion (int idEmpleado, int idProyecto,int tiempo,String responsabilidades){
         Asignacion asignacion = new Asignacion (idEmpleado,idProyecto,tiempo,responsabilidades);
-        asignaciones.add(asignacion)
+        asignaciones.add(asignacion);
     }
 
     public Asignacion buscarAsignacion (int id ){
@@ -153,7 +153,7 @@ public class Unico{
             int count = 0;
             int locate = 0;
 
-            for int (i = 0; i < asignaciones.size();i++){
+            for (int i = 0; i < asignaciones.size();i++){
                 if (id == asignacion.get(i).idAsignacion ){
                     count++;
                     locate = i;
@@ -177,7 +177,7 @@ public class Unico{
             if (asigancion.get(i).idAsignacion == id){
                 asiganciones.remove(i);
             } else{
-                Asignacion asignaciones = new Asignacion (-100,"-",0,"-")
+                Asignacion asignaciones = new Asignacion (-100,"-",0,"-");
             }
         }
     }

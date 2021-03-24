@@ -10,7 +10,7 @@ public class Unico{
     private ArrayList<Proyecto>proyectos = new ArrayList();
     private ArrayList<Asignacion>asignaciones = new ArrayList();
 	
-	public Todo(){
+	public Unico(){
 		
 	}
 		

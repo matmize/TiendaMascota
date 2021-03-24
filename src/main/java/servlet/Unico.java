@@ -10,8 +10,11 @@ public class Unico{
     private ArrayList<Proyecto>proyectos = new ArrayList();
     private ArrayList<Asignacion>asignaciones = new ArrayList();
 
-    public class Unico getInstance (){
-        
+    public static Unico crear(){
+		if (unico == null)
+			unico = new Unico();
+		return todo;
+    	
     }
 
 

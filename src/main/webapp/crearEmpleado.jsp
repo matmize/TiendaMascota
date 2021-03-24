@@ -16,7 +16,7 @@
 
     Unico u =Unico.crear();
 
-    out.println("el nombre del empleado que contrato es :   " + u.getNomre());
+    out.println("el nombre del empleado que contrato es :   " + u.getNombre());
   
     
     

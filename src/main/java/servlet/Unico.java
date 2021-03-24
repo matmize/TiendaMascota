@@ -73,7 +73,7 @@ public class Unico{
                             asignaciones.get(j).idemp = nemp;
                             j++;
                      }else {
-                        if (Integer.ParseInt()nemp[0]==id){
+                        	if (Integer.ParseInt(emp[0]==id)){
                             	asignaciones.remove(j);
                             	j=0;
                             }
@@ -126,7 +126,7 @@ public class Unico{
             if (proyecto.get(i).idProyecto == id){
                 proyectos.remove(i);
             } else{
-                Proyecto proyectos = new Proyecto (-100,"-",0,"-")
+                Proyecto proyectos = new Proyecto (-100,"-",0,"-");
             }
         }
 

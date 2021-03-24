@@ -64,7 +64,7 @@ public class Unico{
                         if (emp.length>1){
                             String nemp ="";
                             for (int k = 0; k<emp.length;k++){
-                                if (Integer.ParseInt(emp[k])!= id){
+                                if (Integer.parseInt(emp[k])!= id){
                                     if (k== emp.length-1){
                                         nemp = nemp+emp[k];
                                     }else{

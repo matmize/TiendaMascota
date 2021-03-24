@@ -75,7 +75,7 @@ public class Unico{
                             asignaciones.get(j).idemp = nemp;
                             j++;
                      }else {
-                        	if (Integer.ParseInt(emp[0]==id)){
+                        	if (Integer.parseInt(emp[0])== id){
                             	asignaciones.remove(j);
                             	j=0;
                             }

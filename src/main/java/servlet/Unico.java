@@ -9,6 +9,11 @@ public class Unico{
     private ArrayList<Empleado>empleados = new ArrayList();
     private ArrayList<Proyecto>proyectos = new ArrayList();
     private ArrayList<Asignacion>asignaciones = new ArrayList();
+	
+	public Todo(){
+		
+	}
+		
 
     public static Unico crear(){
 		if (unico == null){

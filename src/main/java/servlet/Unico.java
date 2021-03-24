@@ -27,7 +27,7 @@ public class Unico{
 
 
     public void crearEmpleado (int id, String nombre, String habilidades){
-        Empledo empleado = new Empledo (id, nombre, habilidades);
+        Empleado empleado = new Empleado (id, nombre, habilidades);
         empleados.add(empleado);
     }
     public Empleado buscarEmpleado (int id){

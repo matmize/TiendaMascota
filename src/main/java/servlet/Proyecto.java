@@ -2,10 +2,10 @@ package servlet;
 
 public class Proyecto{
 	
-	int idProyecto;
-	String empresa;
-	int presupuesto;
-	String tiempo;
+	private int idProyecto;
+	private String empresa;
+	private int presupuesto;
+	private String tiempo;
 
 	public Proyecto (int idProyecto, String empresa, int presupuesto, String tiempo) {
 

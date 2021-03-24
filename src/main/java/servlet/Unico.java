@@ -164,11 +164,13 @@ public class Unico{
             if (count == 1 ){
                 return asiganciones.get(locate);
             }else{
-                Asignacion asignacion= new Asignacion (-100,0,0,0,"-");
+
+
+                Asignacion asignacion = new Asignacion (-100,0,0,0,"-")
                 return asignacion;
             }
         }else{
-            Asignacion asignacion= new Asignacion (-100,0,0,0,"-");
+           Asignacion asignacion = new Asignacion (-100,0,0,0,"-")
             return asignacion;
         }
 

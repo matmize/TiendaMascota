@@ -18,9 +18,9 @@ public class Unico{
     public static Unico crear(){
 		if (unico == null){
 				unico = new Unico();
-			return todo;
+			
 		}
-    	
+    	return todo;
     }
 
 

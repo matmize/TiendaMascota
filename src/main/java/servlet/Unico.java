@@ -11,10 +11,7 @@ public class Unico{
     private ArrayList<Asignacion>asignaciones = new ArrayList();
 
     public class Unico getInstance (){
-        <%@page import = "servlet.*" %>
-        <%@page import = "Empleado" %>
-        <%@page import = "Proyecto" %>
-        <%@page import = "Asignacion" %>
+        
     }
 
 

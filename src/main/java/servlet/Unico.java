@@ -11,9 +11,10 @@ public class Unico{
     private ArrayList<Asignacion>asignaciones = new ArrayList();
 
     public static Unico crear(){
-		if (unico == null)
-			unico = new Unico();
-		return todo;
+		if (unico == null){
+				unico = new Unico();
+			return todo;
+		}
     	
     }
 

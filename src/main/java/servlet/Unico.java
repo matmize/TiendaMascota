@@ -5,6 +5,8 @@ import java.util.*;
 
 
 public class Unico{
+
+    private static Unico unico= null;
     private static Unico INSTANCE = null;
     private ArrayList<Empleado>empleados = new ArrayList();
     private ArrayList<Proyecto>proyectos = new ArrayList();

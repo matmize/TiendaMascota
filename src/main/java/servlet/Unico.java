@@ -146,7 +146,7 @@ public class Unico{
     }
 
     public void crearAsignacion (int id, int idemp, int idProy,int tiempo,String responsabilidades){
-        Asignacion asignacion = new Asignacion (id,idEmpleado,idProyecto,tiempo,responsabilidades);
+        Asignacion asignacion = new Asignacion (id,idemp,idProy,tiempo,responsabilidades);
             asignaciones.add(asignacion);
     }
 
@@ -156,13 +156,13 @@ public class Unico{
             int locate = 0;
 
             for (int i = 0; i < asignaciones.size();i++){
-                if (id == asignacion.get(i).idAsignacion ){
+                if (id == asignaciones.get(i).idAsignacion ){
                     count++;
                     locate = i;
                 }
             }
             if (count == 1 ){
-                return asignacion.get(locate);
+                return asiganciones.get(locate);
             }else{
                 Asignacion asignacion= new Asignacion (-100,"-",0,"-","-");
                 return asignacion;
@@ -175,21 +175,21 @@ public class Unico{
     }
 
     public void eliminarAsignacion (int id, String idemp, int idProy,int tiempo,String responsabilidades){
-         for (int i =0; i< asiganciones.size();i++){
-            if (asigancion.get(i).idAsignacion == id){
-                asiganciones.remove(i);
+         for (int i =0; i< asignaciones.size();i++){
+            if (asignaciones.get(i).idAsignacion == id){
+                asignaciones.remove(i);
             } else{
                 Asignacion asignaciones = new Asignacion (-100,"-",0,"-");
             }
         }
     }
 
-    public void editarAsignacion (int id, String idEmpleado, int idProyecto,int tiempo,String responsabilidades){
+    public void editarAsignacion (int id, String idemp, int idProy,int tiempo,String responsabilidades){
         for (int i =0; i<asignaciones.size();i++){
             if (idProyecto == asignaciones.get(i).idProyecto){
                 asignaciones.get(i).idemp = idEmpleado;
-                asignaciones.get(i).worktime = tiempo;
-                asignaciones.get(i).duty = responsabilidades;
+                asignaciones.get(i).tiempo = tiempo;
+                asignaciones.get(i).responsabilidades = responsabilidades;
             }
         }
 

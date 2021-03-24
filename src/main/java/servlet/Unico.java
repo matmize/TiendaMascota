@@ -145,7 +145,7 @@ public class Unico{
 
     }
 
-    public void crearAsignacion (int id, int idemp, int idProy,int horas,String responsabilidades){
+    public void crearAsignacion (int id, String idemp, int idProy,int horas,String responsabilidades){
         Asignacion asignacion = new Asignacion (id,idemp,idProy,horas,responsabilidades);
         asignaciones.add(asignacion);
     }
@@ -166,22 +166,22 @@ public class Unico{
             }else{
 
 
-                Asignacion asignacion = new Asignacion (-100,0,0,0,"-");
+                Asignacion asignacion = new Asignacion (-100,"-",0,0,"-");
                 return asignacion;
             }
         }else{
-           Asignacion asignacion = new Asignacion (-100,0,0,0,"-");
+           Asignacion asignacion = new Asignacion (-100,"-",0,0,"-");
             return asignacion;
         }
 
     }
 
-    public void eliminarAsignacion (int id, int idemp, int idProy,int tiempo,String responsabilidades){
+    public void eliminarAsignacion (int id, String idemp, int idProy,int tiempo,String responsabilidades){
          for (int i =0; i< asignaciones.size();i++){
             if (asignaciones.get(i).id == id){
                 asignaciones.remove(i);
             } else{
-                Asignacion asignacion = new Asignacion (-100,0,0,0,"-");
+                Asignacion asignacion = new Asignacion (-100,"-",0,0,"-");
             }
         }
     }

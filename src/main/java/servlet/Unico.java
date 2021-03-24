@@ -36,7 +36,7 @@ public class Unico{
             int locate = 0;
 
             for  (int i = 0; i < empleados.size();i++){
-                if (id == empleados.get(i).get{
+                if (id == empleados.get(i).idEmpleado){
                     count++;
                     locate = i;
                 }

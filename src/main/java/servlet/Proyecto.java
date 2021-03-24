@@ -3,14 +3,14 @@ package servlet;
 public class Proyecto{
 	
 	int id;
-	String nombre;
+	String empresa;
 	int presupuesto;
 	String tiempo;
 
-	public Proyecto (int id, String nombre, int presupuesto, String tiempo) {
+	public Proyecto (int id, String empresa, int presupuesto, String tiempo) {
 
 		this.idProyecto = id;
-		this.nombreProyecto = nombre;
+		this.empresa = empresa;
 		this.presupuesto = presupuesto;
 		this.tiempo = tiempo;
 	}

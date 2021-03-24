@@ -14,4 +14,38 @@ public class Proyecto{
 		this.presupuesto = presupuesto;
 		this.tiempo = tiempo;
 	}
+
+    public int getIdProyecto() {
+        return idProyecto;
+    }
+
+    public void setIdProyecto(int idProyecto) {
+        this.idProyecto = idProyecto;
+    }
+
+    public String getEmpresa() {
+        return empresa;
+    }
+
+    public void setEmpresa(String empresa) {
+        this.empresa = empresa;
+    }
+
+    public int getPresupuesto() {
+        return presupuesto;
+    }
+
+    public void setPresupuesto(int presupuesto) {
+        this.presupuesto = presupuesto;
+    }
+
+    public String getTiempo() {
+        return tiempo;
+    }
+
+    public void setTiempo(String tiempo) {
+        this.tiempo = tiempo;
+    }
+        
+        
 }

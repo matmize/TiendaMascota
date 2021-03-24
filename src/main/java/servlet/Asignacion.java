@@ -2,12 +2,12 @@ package servlet;
 
 public class Asignacion {
 	public int id;
-	public String idemp;
+	public int idemp;
 	public int idProy;
 	public int horas;
 	public String responsabilidades;
 
-	public Asignacion(int id,String idemp,int idProy,int horas,String responsabilidades){
+	public Asignacion(int id,int idemp,int idProy,int horas,String responsabilidades){
 		this.id = id;
 		this.idemp = idemp;
 		this.idProy= idProy;
@@ -23,11 +23,11 @@ public class Asignacion {
         this.id = id;
     }
 
-    public String getIdemp() {
+    public int getIdemp() {
         return idemp;
     }
 
-    public void setIdemp(String idemp) {
+    public void setIdemp(int idemp) {
         this.idemp = idemp;
     }
 

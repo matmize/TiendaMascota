@@ -176,7 +176,7 @@ public class Unico{
 
     }
 
-    public void eliminarAsignacion (int id, String idemp, int idProy,int tiempo,String responsabilidades){
+    public void eliminarAsignacion (int id, int idemp, int idProy,int tiempo,String responsabilidades){
          for (int i =0; i< asignaciones.size();i++){
             if (asignaciones.get(i).id == id){
                 asignaciones.remove(i);

@@ -1,11 +1,11 @@
 package servlet;
 
 public class Asignacion {
-	private int id;
-	private String idemp;
-	private int idProy;
-	private int horas;
-	private String responsabilidades;
+	public int id;
+	public String idemp;
+	public int idProy;
+	public int horas;
+	public String responsabilidades;
 
 	public Asignacion(int id,String idemp,int idProy,int horas,String responsabilidades){
 		this.id = id;

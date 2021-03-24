@@ -1,18 +1,18 @@
 package servlet;
 
 public class Asignacion {
-	public int id;
-	public String idemp;
-	public int idProy;
-	public int horas;
-	public String duty;
+	private int id;
+	private String idemp;
+	private int idProy;
+	private int horas;
+	private String duty;
 
-	public Asignacion(int id,String idEmpleado,int idProyecto,int tiempo,String responsabilidades){
-		this.idAsignacion = id;
+	public Asignacion(int id,String idemp,int idProy,int horas,String responsabilidades){
+		this.id = id;
 		this.idemp = idEmpleado;
-		this.idProy= idProyecto;
-		this.worktime = tiempo;
-		this.duty = responsabilidades;
+		this.idProy= idProy;
+		this.horas = horas;
+		this.responsabilidades = responsabilidades;
 	}
 	
 }

@@ -9,7 +9,7 @@ public class Proyecto{
 
 	public Proyecto (int idProyecto, String empresa, int presupuesto, String tiempo) {
 
-		this.idProyecto = id;
+		this.idProyecto = idProyecto;
 		this.empresa = empresa;
 		this.presupuesto = presupuesto;
 		this.tiempo = tiempo;

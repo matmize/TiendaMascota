@@ -2,13 +2,13 @@ package servlet;
 
 public class Empleado{
 
-	public int idEmpleado;
-	public String nombreEmpleado;
-	public String habilidades;
+	private int idEmpleado;
+	private String nombreEmpleado;
+	private String habilidades;
 
 	public Empleado(int idEmpleado, String nombreEmpleado, String habilidades){
-		this.idEmpleado = id;
-		this.nombreEmpleado = nombre;
+		this.idEmpleado = idEmpleado;
+		this.nombreEmpleado = nombreEmpleado;
 		this.habilidades = habilidades;
 	}
 }

@@ -19,7 +19,7 @@
         if (unico.buscarEmpleado(id).idEmpleado == -100){
             unico.crearEmpleado(idEmpleado, nombreEmpleado,habilidadEmpleado);
         }else{%>
-            <p>Ya Existe un empleado con el id <%= Integer.parseInt(request.getParameter("id"))</p>
+            <p>Ya Existe un empleado con el id <%= Integer.parseInt(request.getParameter("id"))%></p>
 
         <%}
     

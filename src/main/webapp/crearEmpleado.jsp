@@ -12,9 +12,9 @@
    <%
         Unico unico = Unico.getInstance();
 
-        int idEmpleado = Math.abs(Integer.parseInt(request.getParameter("id")));
-        String nombreEmpleado = request.getParameter("nombre");
-        String habilidadEmpleado = request.getParameter("habilidad");
+        int id = Math.abs(Integer.parseInt(request.getParameter("id")));
+        String nombre = request.getParameter("nombre");
+        String habilidad = request.getParameter("habilidad");
 
         if (unico.buscarEmpleado(id).idEmpleado == -100){
             unico.crearEmpleado(idEmpleado, nombreEmpleado,habilidadEmpleado);

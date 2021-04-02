@@ -17,12 +17,12 @@ public class Unico{
 	}
 		
 
-    public static Unico crear(){
-		if (unico == null){
-				unico = new Unico();
+    public static Unico getInstance(){
+		if (INSTANCE == null){
+				INSTANCE = new Unico();
 			
 		}
-    	return unico;
+    	return INSTANCE;
     }
 
 

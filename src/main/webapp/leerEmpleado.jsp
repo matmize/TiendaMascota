@@ -15,9 +15,9 @@
     
             int id = Math.abs(Integer.parseInt(request.getParameter("id")));
     
-            if (unico.buscarEmpleado(id).idEmpleado == -100){
+            if (unico.buscarEmpleado(id).idEmpleado == -100){%>
                 <p>No existe el empleado con ID<%= Integer.parseInt(request.getParameter("id"))%></p>
-            }else{%>
+            <%}else{%>
                 <Table>
                     <tr><td><Strong>ID Empleados</Strong></td><tr><td><Strong>Nombre Empleado</Strong></td><tr><td><Strong>Habilidad Empleado</Strong></td>
                     <tr><td><Strong><% unico.buscarEmpleado(id).idEmpleado%> </Strong></td><tr><td><Strong><% unico.buscarEmpleado(id).nombreEmpleado%> </Strong></td><tr><td><Strong><% unico.buscarEmpleado(id).habilidadEmpleado%> </Strong></td>

@@ -14,9 +14,12 @@
     <%@page import = "servlet.*" %>
     <%@ page import = "java.lang.Math.*" %>
 
-    int id = Math.abs(Integer.parseInt(request.getParameter("id")))
-
+    
     <%
+        Unico unico = Unico.getInstance();
+        int id = Math.abs(Integer.parseInt(request.getParameter("id")))
+
+
         if (unico.buscarAsignacion(id).idProyecto!=-100){
             unico.eliminarAsignacion(id); %>
 
@@ -27,5 +30,7 @@
 
         <%}
     %>
+
+    <a href = "eliminarAsignacion.html"><button  type="button">Volver</button></a><a href = "index.html"><button type = "button" >Menu</button></a>
 </body>
 </html>

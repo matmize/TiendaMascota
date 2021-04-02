@@ -1,4 +1,3 @@
-
 <html>
 <head>
 	
@@ -25,7 +24,7 @@
         <%}
     
     %>
-    <p>Se creo el empleado con el ID <%= Integer.parseInt(request.getParameter("id"))</p>
+    <p>Se creo el empleado con el ID <%= Math.abs(Integer.parseInt(request.getParameter("id")))%></p>
 
     <a href = "crearEmpleado.html"><button  type="button">Volver</button></a><a href = "index.html"><button type = "button" >Menu</button></a>
 	

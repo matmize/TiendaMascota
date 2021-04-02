@@ -17,7 +17,7 @@
         String habilidad = request.getParameter("habilidad");
 
         if (unico.buscarEmpleado(id).idEmpleado == -100){
-            unico.crearEmpleado(idEmpleado, nombreEmpleado,habilidadEmpleado);
+            unico.crearEmpleado(id,nombre,habilidad);
         }else{%>
             <p>Ya Existe un empleado con el id <%= Integer.parseInt(request.getParameter("id"))%></p>
 

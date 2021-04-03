@@ -166,11 +166,11 @@ public class Unico{
             }else{
 
 
-                Asignacion asignacion = new Asignacion ("",0,0,"-");
+                Asignacion asignacion = new Asignacion ("",-100,0,"-");
                 return asignacion;
             }
         }else{
-           Asignacion asignacion = new Asignacion ("",0,0,"-");
+           Asignacion asignacion = new Asignacion ("",-100,0,"-");
             return asignacion;
         }
 
@@ -181,7 +181,7 @@ public class Unico{
             if (idProyecto == asignaciones.get(i).idProy){
                 asignaciones.remove(i);
             } else{
-                Asignacion asignacion = new Asignacion ("",0,0,"-");
+                Asignacion asignacion = new Asignacion ("",-100,0,"-");
             }
         }
     }

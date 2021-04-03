@@ -21,12 +21,12 @@
             unico.crearAsignacion(idEmpleado,idProyecto,horas,responsabilidades);
             
         }else{%>
-            <p>Ya Existe una asignacion con el id <%= Integer.parseInt(request.getParameter("id"))%></p>
+            <p>Ya Existe una asignacion con el id <%= Integer.parseInt(request.getParameter("idProyecto"))%></p>
 
         <%}
     
     %>
-    <p>Se creo la Asignacion con el ID <%= Math.abs(Integer.parseInt(request.getParameter("id")))%></p>
+    <p>Se creo la Asignacion con el ID <%= Math.abs(Integer.parseInt(request.getParameter("idProyecto")))%></p>
 
     <a href = "crearAsignacion.html"><button  type="button">Volver</button></a><a href = "index.html"><button type = "button" >Menu</button></a>
 	

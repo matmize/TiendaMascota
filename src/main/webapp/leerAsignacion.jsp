@@ -13,7 +13,7 @@
        <%
             Unico unico = Unico.getInstance();
     
-            int idProyecto = Math.abs(Integer.parseInt(request.getParameter("idProyecto")));
+            int id = Math.abs(Integer.parseInt(request.getParameter("idProyecto")));
                 
             if (unico.buscarAsignacion(id).idProyecto == -100){%>
                 <p>No existe la Asignacion con ID<%= Integer.parseInt(request.getParameter("idProyecto"))%></p>

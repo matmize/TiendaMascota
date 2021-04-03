@@ -18,7 +18,7 @@
         String responsabilidades = request.getParameter("responsabilidades");
         
         if (unico.buscarAsignacion(idProyecto).idProy == -100){
-            unico.crearAsignacion(id,idemp,idProyecto,horas,responsabilidades);
+            unico.crearAsignacion(idEmpleado,idProyecto,horas,responsabilidades);
             
         }else{%>
             <p>Ya Existe una asignacion con el id <%= Integer.parseInt(request.getParameter("id"))%></p>

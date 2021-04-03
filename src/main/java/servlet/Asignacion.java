@@ -7,7 +7,7 @@ public class Asignacion {
 	public int horas;
 	public String responsabilidades;
 
-	public Asignacion(int id,String idemp,int idProy,int horas,String responsabilidades){
+	public Asignacion(int id,int idemp,int idProy,int horas,String responsabilidades){
 		this.id = id;
 		this.idemp = idemp;
 		this.idProy= idProy;

@@ -26,7 +26,7 @@
             <p>Se elimino correctamente el empleado</p>
         <%}else{%>
 
-            <p>No existe el empleado con ID <%= Math.abs(Integer.parseInt(request.getParameter("id)))%></p>
+            <p>No existe el empleado con ID <%= Math.abs(Integer.parseInt(request.getParameter("id")))%></p>
 
         <%}
     %>

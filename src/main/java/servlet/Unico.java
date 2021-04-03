@@ -128,7 +128,7 @@ public class Unico{
             if (proyectos.get(i).idProyecto == id){
                 proyectos.remove(i);
             } else{
-                Proyecto proyecto = new Proyecto (-100,"-",0,"-");
+                Proyecto proyecto = new Proyecto ("","-",0,"-");
             }
         }
 
@@ -166,11 +166,11 @@ public class Unico{
             }else{
 
 
-                Asignacion asignacion = new Asignacion (-100,"-",0,0,"-");
+                Asignacion asignacion = new Asignacion ("","-",0,0,"-");
                 return asignacion;
             }
         }else{
-           Asignacion asignacion = new Asignacion (-100,"-",0,0,"-");
+           Asignacion asignacion = new Asignacion ("","-",0,0,"-");
             return asignacion;
         }
 
@@ -181,7 +181,7 @@ public class Unico{
             if (asignaciones.get(i).id == id){
                 asignaciones.remove(i);
             } else{
-                Asignacion asignacion = new Asignacion (-100,"-",0,0,"-");
+                Asignacion asignacion = new Asignacion ("","","-",0,0,"-");
             }
         }
     }

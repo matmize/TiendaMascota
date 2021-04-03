@@ -20,7 +20,7 @@
             <%}else{%>
                 <Table>
                     <tr><td><Strong>ID Empleados</Strong></td><tr><td><Strong>Nombre Empleado</Strong></td><tr><td><Strong>Habilidad Empleado</Strong></td>
-                    <tr><td><Strong><% unico.buscarEmpleado(id).idEmpleado%> </Strong></td><tr><td><Strong><% unico.buscarEmpleado(id).nombreEmpleado%> </Strong></td><tr><td><Strong><% unico.buscarEmpleado(id).habilidadEmpleado%> </Strong></td>
+                    <tr><td><Strong><%= unico.buscarEmpleado(id).idEmpleado%> </Strong></td><tr><td><Strong><%= unico.buscarEmpleado(id).nombreEmpleado%> </Strong></td><tr><td><Strong><%= unico.buscarEmpleado(id).habilidadEmpleado%> </Strong></td>
 
 
                 </Table>

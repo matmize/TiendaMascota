@@ -188,8 +188,8 @@ public class Unico{
 
     public void editarAsignacion (int id, String idemp, int idProy,int horas,String responsabilidades){
         for (int i =0; i<asignaciones.size();i++){
-            if (idProy == asignaciones.get(i).idProyecto){
-                asignaciones.get(i).idEmpleado = idemp;
+            if (idProyecto == asignaciones.get(i).idProy){
+                asignaciones.get(i).idemp = idEmpleado;
                 asignaciones.get(i).horas = horas;
                 asignaciones.get(i).responsabilidades = responsabilidades;
             }

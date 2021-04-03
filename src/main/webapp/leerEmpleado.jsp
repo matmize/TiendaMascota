@@ -1,12 +1,13 @@
 
 <html>
     <head>
-        
+        <h1>Leer Empleado</h1>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     </head>
     
     <body>
     
-       <h1>Leer Empleado</h1>
+       
        <%@ page import = "servlet.*" %>
        <%@ page import = "java.lang.Math.*" %>
     

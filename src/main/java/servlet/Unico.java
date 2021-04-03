@@ -146,7 +146,7 @@ public class Unico{
     }
 
     public void crearAsignacion ( String idEmpleado, int idProyecto,int horas,String responsabilidades){
-        Asignacion asignacion = new Asignacion (idEmpleado,idProy,horas,responsabilidades);
+        Asignacion asignacion = new Asignacion (idEmpleado,idProyecto,horas,responsabilidades);
         asignaciones.add(asignacion);
     }
 
@@ -156,7 +156,7 @@ public class Unico{
             int locate = 0;
 
             for (int i = 0; i < asignaciones.size();i++){
-                if (id == asignaciones.get(i).id ){
+                if (idProyecto == asignaciones.get(i).idProy){
                     count++;
                     locate = i;
                 }
@@ -178,7 +178,7 @@ public class Unico{
 
     public void eliminarAsignacion (String idEmpleado, int idProyecto,int horas,String responsabilidades){
          for (int i =0; i< asignaciones.size();i++){
-            if (asignaciones.get(i).id == id){
+            if (idProyecto == asignaciones.get(i).idProy){
                 asignaciones.remove(i);
             } else{
                 Asignacion asignacion = new Asignacion ("",0,0,"-");

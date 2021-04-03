@@ -12,7 +12,6 @@
    <%
         Unico unico = Unico.getInstance();
 
-        int id = Math.abs(Integer.parseInt(request.getParameter("id")));
         int idEmpleado = Math.abs(Integer.parseInt(request.getParameter("idEmpleado")));
         int idProyecto = Math.abs(Integer.parseInt(request.getParameter("idProyecto")));
         String horas = request.getParameter("horas");

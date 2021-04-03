@@ -29,7 +29,7 @@
 %>
 <p>Se creo el Proyecto con el ID <%= Math.abs(Integer.parseInt(request.getParameter("id")))%></p>
 
-<a href = "crearEmpleado.html"><button  type="button">Volver</button></a><a href = "index.html"><button type = "button" >Menu</button></a>
+<a href = "crearProyecto.html"><button  type="button">Volver</button></a><a href = "index.html"><button type = "button" >Menu</button></a>
 
     
 	

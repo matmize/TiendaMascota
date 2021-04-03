@@ -28,6 +28,6 @@
 
         <%}
     %>
-    <a href = "eliminarEmpleado.html"><button  type="button">Volver</button></a><a href = "index.html"><button type = "button" >Menu</button></a>
+    <a href = "eliminarProyecto.html"><button  type="button">Volver</button></a><a href = "index.html"><button type = "button" >Menu</button></a>
 </body>
 </html>

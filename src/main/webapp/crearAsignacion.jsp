@@ -1,24 +1,35 @@
 <html>
 <head>
-    <title>Crear Asignacion</title>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	
 </head>
 
 <body>
-    <h1>Crear Asignacion</h1>
-    <%@page import = "servlet.*" %>
 
-    <%
+   <h1>Crear Asignacion</h1>
+   <%@ page import = "servlet.*" %>
+   <%@ page import = "java.lang.Math.*" %>
+
+   <%
         Unico unico = Unico.getInstance();
 
-        int id = Integer.parseInt(request.getParameter("id"));
-        int idE = Integer.parseInt(request.getParameter("idEmpleado"));
-        int idO = Integer.parseInt(request.getParameter("idProyecto"));
+        int id = Math.abs(Integer.parseInt(request.getParameter("id")));
+        int idEmpleado = Math.abs(Integer.parseInt(request.getParameter("idEmpleado")));
+        int idProyecto = Math.abs(Integer.parseInt(request.getParameter("idProyecto")));
         String horas = request.getParameter("horas");
         String responsabilidades = request.getParameter("responsabilidades");
+        
+        if (unico.buscarAsignacion(idProyecto).idProy == -100){
+            unico.crearAsignacion(id,idemp,idProy,horas,responsabilidades)
+            
+        }else{%>
+            <p>Ya Existe una asignacion con el id <%= Integer.parseInt(request.getParameter("id"))%></p>
 
-        Unico u = Unico.crear();
-        out.println(" el Unico me devuelve " + u.getid());  
+        <%}
+    
     %>
+    <p>Se creo la Asignacion con el ID <%= Math.abs(Integer.parseInt(request.getParameter("id")))%></p>
+
+    <a href = "crearAsignacion.html"><button  type="button">Volver</button></a><a href = "index.html"><button type = "button" >Menu</button></a>
+	
 </body>
 </html>

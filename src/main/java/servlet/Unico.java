@@ -60,7 +60,7 @@ public class Unico{
                 if (asignaciones.size()>0){
                     int j = 0;
                     while (j<asignaciones.size()){
-                        String [] emp = asignaciones.get(j).idemp.split(",");
+                        int [] emp = asignaciones.get(j).idemp.split(",");
                         if (emp.length>1){
                             String nemp ="";
                             for (int k = 0; k<emp.length;k++){
@@ -166,11 +166,11 @@ public class Unico{
             }else{
 
 
-                Asignacion asignacion = new Asignacion (-100,"-",0,0,"-");
+                Asignacion asignacion = new Asignacion (-100,0,0,0,"-");
                 return asignacion;
             }
         }else{
-           Asignacion asignacion = new Asignacion (-100,"-",0,0,"-");
+           Asignacion asignacion = new Asignacion (-100,0,0,0,"-");
             return asignacion;
         }
 
@@ -181,7 +181,7 @@ public class Unico{
             if (asignaciones.get(i).id == id){
                 asignaciones.remove(i);
             } else{
-                Asignacion asignacion = new Asignacion (-100,"-",0,0,"-");
+                Asignacion asignacion = new Asignacion (-100,0,0,0,"-");
             }
         }
     }

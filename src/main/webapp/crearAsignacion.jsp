@@ -14,7 +14,7 @@
 
         String idEmpleado = request.getParameter("idEmpleado");
         int idProyecto = Math.abs(Integer.parseInt(request.getParameter("idProyecto")));
-        String horas = request.getParameter("horas");
+        int horas = Math.abs(Integer.parseInt(request.getParameter("horas")));
         String responsabilidades = request.getParameter("responsabilidades");
         
         if (unico.buscarAsignacion(idProyecto).idProy == -100){

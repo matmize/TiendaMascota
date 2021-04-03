@@ -15,7 +15,7 @@
     
             int idProyecto = Math.abs(Integer.parseInt(request.getParameter("idProyecto")));
                 
-            if (unico.buscarAsignacion(idProyecto).idProyecto == -100){%>
+            if (unico.buscarAsignacion(id).idProyecto == -100){%>
                 <p>No existe la Asignacion con ID<%= Integer.parseInt(request.getParameter("idProyecto"))%></p>
             <%}else{%>
                 <Table>

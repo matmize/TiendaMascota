@@ -13,17 +13,17 @@
        <%
             Unico unico = Unico.getInstance();
     
-            int id = Math.abs(Integer.parseInt(request.getParameter("id")));
+            int idProyecto = Math.abs(Integer.parseInt(request.getParameter("idProyecto")));
                 
             if (unico.buscarAsignacion(id).id == -100){%>
-                <p>No existe la Asignacion con ID<%= Integer.parseInt(request.getParameter("id"))%></p>
+                <p>No existe la Asignacion con ID<%= Integer.parseInt(request.getParameter("idProyecto"))%></p>
             <%}else{%>
                 <Table>
-                    <tr><td><Strong>ID Asignacion : </Strong></td> <tr><td><Strong><%= unico.buscarAsignacion(id).id%> </Strong></td>
-                    <tr><td><Strong>ID Empleado : </Strong></td> <tr><td><Strong><%= unico.buscarAsignacion(id).idemp%> </Strong></td>
-                    <tr><td><Strong>ID Asignacion : </Strong></td> <tr><td><Strong><%= unico.buscarAsignacion(id).idProy%> </Strong></td>
-                    <tr><td><Strong>Horas : </Strong></td><tr><td><Strong><%= unico.buscarAsignacion(id).horas%> </Strong></td>
-                    <tr><td><Strong>Responsabilidades : </Strong></td><tr><td><Strong><%= unico.buscarAsignacion(id).responsabilidades%> </Strong></td>
+                
+                    <tr><td><Strong>ID Empleado : </Strong></td> <tr><td><Strong><%= unico.buscarAsignacion(idProyecto).idemp%> </Strong></td>
+                    <tr><td><Strong>ID Asignacion : </Strong></td> <tr><td><Strong><%= unico.buscarAsignacion(idProyecto).idProyecto%> </Strong></td>
+                    <tr><td><Strong>Horas : </Strong></td><tr><td><Strong><%= unico.buscarAsignacion(idProyecto).horas%> </Strong></td>
+                    <tr><td><Strong>Responsabilidades : </Strong></td><tr><td><Strong><%= unico.buscarAsignacion(idProyecto).responsabilidades%> </Strong></td>
                     
 
 
@@ -34,7 +34,7 @@
         %>
         
     
-        <a href = "crearAsignacion.html"><button  type="button">Volver</button></a><a href = "index.html"><button type = "button" >Menu</button></a>
+        <a href = "leerAsignacion.html"><button  type="button">Volver</button></a><a href = "index.html"><button type = "button" >Menu</button></a>
         
     </body>
     </html>

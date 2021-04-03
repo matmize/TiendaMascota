@@ -150,7 +150,7 @@ public class Unico{
         asignaciones.add(asignacion);
     }
 
-    public Asignacion buscarAsignacion (int id ){
+    public Asignacion buscarAsignacion (int idProyecto ){
          if (asignaciones.size()>0){
             int count = 0;
             int locate = 0;

@@ -19,9 +19,9 @@
                 <p>No existe el empleado con ID<%= Integer.parseInt(request.getParameter("id"))%></p>
             <%}else{%>
                 <Table>
-                    <tr><td><Strong>ID Empleado : </Strong></td> <Strong><%= unico.buscarEmpleado(id).idEmpleado%> </Strong>
-                    <tr><td><Strong>Nombre Empleado : </Strong></td><Strong><%= unico.buscarEmpleado(id).nombreEmpleado%> </Strong>
-                    <tr><td><Strong>Habilidad Empleado : </Strong></td><Strong><%= unico.buscarEmpleado(id).habilidades%> </Strong>
+                    <tr><td><Strong>ID Empleado : </Strong></td> <tr><td><Strong><%= unico.buscarEmpleado(id).idEmpleado%> </Strong></td>
+                    <tr><td><Strong>Nombre Empleado : </Strong></td><tr><td></td><Strong><%= unico.buscarEmpleado(id).nombreEmpleado%> </Strong></td>
+                    <tr><td><Strong>Habilidad Empleado : </Strong></td><tr><td></td><Strong><%= unico.buscarEmpleado(id).habilidades%> </Strong></td>
                     
 
 

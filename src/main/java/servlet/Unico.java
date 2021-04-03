@@ -146,7 +146,7 @@ public class Unico{
     }
 
     public void crearAsignacion (int id, String idEmpleado, int idProyecto,int horas,String responsabilidades){
-        Asignacion asignacion = new Asignacion (id,idEmpleado,idProy,horas,responsabilidades);
+        Asignacion asignacion = new Asignacion (id,idEmpleado,idProyecto,horas,responsabilidades);
         asignaciones.add(asignacion);
     }
 

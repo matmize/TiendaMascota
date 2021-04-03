@@ -23,11 +23,11 @@ public class Asignacion {
         this.id = id;
     }
 
-    public String getIdemp() {
+    public int getIdemp() {
         return idemp;
     }
 
-    public void setIdemp(String idemp) {
+    public void setIdemp(int idemp) {
         this.idemp = idemp;
     }
 

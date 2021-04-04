@@ -12,7 +12,7 @@
    <%
         Unico unico = Unico.getInstance();
 
-
+        int id = Math.abs(Integer.parseInt(request.getParameter("id")));
         String nombre = request.getParameter("nombre");
         String habilidad = request.getParameter("habilidad");
 

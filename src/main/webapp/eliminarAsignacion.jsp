@@ -21,12 +21,12 @@
 
         if (unico.buscarAsignacion(id).idProy!=-100){
 
-            unico.eliminarAsignacion(id); %>
+            unico.eliminarAsignacion(idProy); %>
 
             <p>Se elimino la asignacion</p>
         <%}else{%>
 
-            <p>No existe la asignacion del proyecto con ID <%= Math.abs(Integer.parseInt(request.getParameter("id")))%></p>
+            <p>No existe la asignacion del proyecto con ID <%= Math.abs(Integer.parseInt(request.getParameter("idProy")))%></p>
 
         <%}
     %>

@@ -18,7 +18,7 @@
         int id = Math.abs(Integer.parseInt(request.getParameter("id")));
 
    
-        if (unico.buscarAsignacion(id).idProy != -100) {
+        if (unico.buscarAsignacion(id) != -100) {
 
             unico.eliminarAsignacion(id); %>
 

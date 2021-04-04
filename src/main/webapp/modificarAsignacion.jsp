@@ -26,7 +26,7 @@
     
     %>
 
-    <p>Se modifico la Asignacion asosiada al proyecto con el ID <%= Math.abs(Integer.parseInt(request.getParameter("id")))%></p>
+    <p>Se modifico la Asignacion asosiada al proyecto con el ID <%= Math.abs(Integer.parseInt(request.getParameter("idProyecto")))%></p>
 
     <a href = "modificarAsignacion.html"><button  type="button">Volver</button></a><a href = "index href = "index.html"><button type = "button" >Menu</button></a>
 	

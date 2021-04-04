@@ -178,7 +178,7 @@ public class Unico{
 
     public void eliminarAsignacion (String idEmpleado, int idProyecto,int horas,String responsabilidades){
          for (int i =0; i< asignaciones.size();i++){
-            if (idProyecto == asignaciones.get(i).idProy){
+            if (asignaciones.get(i).idProy == idProyecto){
                 asignaciones.remove(i);
             } else{
                 Asignacion asignacion = new Asignacion ("",-100,0,"-");

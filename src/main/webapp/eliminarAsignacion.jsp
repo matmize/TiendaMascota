@@ -11,24 +11,26 @@
     <h1>Eliminar Asignacion</h1>
     <%@page import = "servlet.*" %>
     <%@ page import = "java.lang.Math.*" %>
+
+    
     <%
         Unico unico = Unico.getInstance();
 
-
         int id = Math.abs(Integer.parseInt(request.getParameter("id")));
 
-   
-        if (unico.buscarAsignacion(id) != -100) {
 
-            unico.eliminarAsignacion(id); %>
+        if (unico.buscarAsignacion(id).idProy!=-100){
 
-            <p>Se elimino correctamente La asignacion</p>
+            unico.eliminarAsignacion(id); 
+
+            <p>Se elimino la asignacion</p>
         <%}else{%>
 
-            <p>No existe el empleado con ID <%= Math.abs(Integer.parseInt(request.getParameter("id")))%></p>
+            <p>No existe la asignacion del proyecto con ID <%= Math.abs(Integer.parseInt(request.getParameter("id")))%></p>
 
         <%}
     %>
-    <a href = "eliminarAsignacion.html"><button  type="button">Volver</button></a><a href = "index href = "index.html"><button type = "button" >Menu</button></a>
+
+    <a href = "eliminarAsignacion.html"><button  type="button">Volver</button></a><a href = "index.html"><button type = "button" >Menu</button></a>
 </body>
 </html>

@@ -27,7 +27,7 @@ public class Unico{
 
 
     public void crearEmpleado (int idEmpleado, String nombreEmpleado, String habilidades){
-        Empleado empleado = new Empleado (id, nombre, habilidades);
+        Empleado empleado = new Empleado (idEmpleado, nombreEmpleado, habilidades);
         empleados.add(empleado);
     }
     public Empleado buscarEmpleado (int idEmpleado){
@@ -36,7 +36,7 @@ public class Unico{
             int locate = 0;
 
             for  (int i = 0; i < empleados.size();i++){
-                if (id == empleados.get(i).idEmpleado){
+                if (idEmpleado == empleados.get(i).idemp){
                     count++;
                     locate = i;
                 }
@@ -55,7 +55,7 @@ public class Unico{
 
     public void eliminarEmpleado(int idEmpleado){
         for (int i =0; i< empleados.size();i++){
-            if (empleados.get(i).idEmpleado == id){
+            if (empleados.get(i).idemp == idEmpleado){
                 empleados.remove(i);
                 if (asignaciones.size()>0){
                     int j = 0;
@@ -64,7 +64,7 @@ public class Unico{
                         if (emp.length>1){
                             String nemp ="";
                             for (int k = 0; k<emp.length;k++){
-                                if (Integer.parseInt(emp[k])!= id){
+                                if (Integer.parseInt(emp[k])!= idEmpleado){
                                     if (k== emp.length-1){
                                         nemp = nemp+emp[k];
                                     }else{
@@ -75,7 +75,7 @@ public class Unico{
                             asignaciones.get(j).idemp = nemp;
                             j++;
                      }else {
-                        	if (Integer.parseInt(emp[0])== id){
+                        	if (Integer.parseInt(emp[0])== idEmpleado){
                             	asignaciones.remove(j);
                             	j=0;
                             }
@@ -88,8 +88,8 @@ public class Unico{
 
     public void editarEmpleado(int idEmpleado, String nombreEmpleado, String habilidades){
         for (int i =0; i<empleados.size();i++){
-            if (id == empleados.get(i).idEmpleado){
-                empleados.get(i).nombreEmpleado = nombre;
+            if (idEmpleado == empleados.get(i).idemp){
+                empleados.get(i).nombre = nombreEmpleado;
                 empleados.get(i).habilidades = habilidades;
             }
         }

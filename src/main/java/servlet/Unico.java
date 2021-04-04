@@ -26,11 +26,11 @@ public class Unico{
     }
 
 
-    public void crearEmpleado (int id, String nombre, String habilidades){
+    public void crearEmpleado (int idEmpleado, String nombreEmpleado, String habilidades){
         Empleado empleado = new Empleado (id, nombre, habilidades);
         empleados.add(empleado);
     }
-    public Empleado buscarEmpleado (int id){
+    public Empleado buscarEmpleado (int idEmpleado){
         if (empleados.size()>0){
             int count = 0;
             int locate = 0;
@@ -53,7 +53,7 @@ public class Unico{
         }
     }
 
-    public void eliminarEmpleado(int id){
+    public void eliminarEmpleado(int idEmpleado){
         for (int i =0; i< empleados.size();i++){
             if (empleados.get(i).idEmpleado == id){
                 empleados.remove(i);
@@ -86,7 +86,7 @@ public class Unico{
         }
     }
 
-    public void editarEmpleado(int id, String nombre, String habilidades){
+    public void editarEmpleado(int idEmpleado, String nombreEmpleado, String habilidades){
         for (int i =0; i<empleados.size();i++){
             if (id == empleados.get(i).idEmpleado){
                 empleados.get(i).nombreEmpleado = nombre;

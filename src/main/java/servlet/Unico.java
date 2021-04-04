@@ -26,17 +26,17 @@ public class Unico{
     }
 
 
-    public void crearEmpleado (int idEmpleado, String nombreEmpleado, String habilidades){
-        Empleado empleado = new Empleado (idEmpleado, nombreEmpleado, habilidades);
+    public void crearEmpleado (int id, String nombre, String habilidades){
+        Empleado empleado = new Empleado (id, nombre, habilidades);
         empleados.add(empleado);
     }
-    public Empleado buscarEmpleado (int idEmpleado){
+    public Empleado buscarEmpleado (int id){
         if (empleados.size()>0){
             int count = 0;
             int locate = 0;
 
             for  (int i = 0; i < empleados.size();i++){
-                if (idEmpleado == empleados.get(i).idemp){
+                if (id == empleados.get(i).idEmpleado){
                     count++;
                     locate = i;
                 }
@@ -53,9 +53,9 @@ public class Unico{
         }
     }
 
-    public void eliminarEmpleado(int idEmpleado){
+    public void eliminarEmpleado(int id){
         for (int i =0; i< empleados.size();i++){
-            if (empleados.get(i).idemp == idEmpleado){
+            if (empleados.get(i).idEmpleado == id){
                 empleados.remove(i);
                 if (asignaciones.size()>0){
                     int j = 0;
@@ -64,7 +64,7 @@ public class Unico{
                         if (emp.length>1){
                             String nemp ="";
                             for (int k = 0; k<emp.length;k++){
-                                if (Integer.parseInt(emp[k])!= idEmpleado){
+                                if (Integer.parseInt(emp[k])!= id){
                                     if (k== emp.length-1){
                                         nemp = nemp+emp[k];
                                     }else{
@@ -75,7 +75,7 @@ public class Unico{
                             asignaciones.get(j).idemp = nemp;
                             j++;
                      }else {
-                        	if (Integer.parseInt(emp[0])== idEmpleado){
+                        	if (Integer.parseInt(emp[0])== id){
                             	asignaciones.remove(j);
                             	j=0;
                             }
@@ -86,10 +86,10 @@ public class Unico{
         }
     }
 
-    public void editarEmpleado(int idEmpleado, String nombreEmpleado, String habilidades){
+    public void editarEmpleado(int id, String nombre, String habilidades){
         for (int i =0; i<empleados.size();i++){
-            if (idEmpleado == empleados.get(i).idemp){
-                empleados.get(i).nombre = nombreEmpleado;
+            if (id == empleados.get(i).idEmpleado){
+                empleados.get(i).nombreEmpleado = nombre;
                 empleados.get(i).habilidades = habilidades;
             }
         }

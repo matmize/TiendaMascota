@@ -19,7 +19,7 @@
 
         if (unico.buscarEmpleado(id).idEmpleado == -100){
            
-            unico.editarEmpleado(id,nombreEmpleado,habilidades);
+            unico.editarEmpleado(id,nombre,habilidad);
 
         }
     

@@ -20,7 +20,7 @@
 
         if (unico.buscarAsignacion(idProyecto).idProy == -100){
            
-            unico.editarAsignacion(idEmpleado,idProyecto,horas,responsabilidades)
+            unico.editarAsignacion(idEmpleado,idProyecto,horas,responsabilidades);
 
         }
     

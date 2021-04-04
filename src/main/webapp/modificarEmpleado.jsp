@@ -15,13 +15,11 @@
         int id = Math.abs(Integer.parseInt(request.getParameter("id")));
         String nombre = request.getParameter("nombre");
         String habilidad = request.getParameter("habilidad");
+        
 
         if (unico.buscarEmpleado(id).idEmpleado == -100){
            
-            unico.editarEmpleado(id,nombre,habilidad);
-
-           
-
+            unico.editarEmpleado(id,nombreEmpleado,habilidades);
 
         }
     

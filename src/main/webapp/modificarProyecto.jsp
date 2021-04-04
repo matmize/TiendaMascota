@@ -18,7 +18,7 @@
         String tiempo = request.getParameter("tiempo");
         
 
-        if (unico.Proyecto(id).idProyecto == -100){
+        if (unico.buscarProyecto(id).idProyecto == -100){
            
             unico.editarProyecto(id,empresa,presupuesto,tiempo);
 

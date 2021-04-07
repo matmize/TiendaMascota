@@ -36,7 +36,7 @@ public class Unico{
             int locate = 0;
 
             for  (int i = 0; i < productos.size();i++){
-                if (codigo== productos.get(i).codigo){
+                if (codigo== productos.get(i).getCodigo()){
                     count++;
                     locate = i;
                 }
@@ -55,7 +55,7 @@ public class Unico{
 
    public void eliminarProducto (int codigo){
         for (int i =0; i< productos.size(); i++){
-            if (productos.get(i).codigo == codigo){
+            if (productos.get(i).getCodigo() == codigo){
                 productos.remove(i);
             } else{
                 Producto productos = new Producto (-100,"-","-",0,0);
@@ -65,9 +65,9 @@ public class Unico{
 
     }
 
-    public void editarEmpleado(int id, String nombre, String habilidades){
-        for (int i =0; i<empleados.size();i++){
-            if (id == empleados.get(i).idEmpleado){
+    public void editarProducto(int codigo, String nombre,String descripcion,int valorUni,int cantidad){
+        for (int i =0; i<productos.size();i++){
+            if (codigo == productos.get(i).getCodigo()){
                 empleados.get(i).nombreEmpleado = nombre;
                 empleados.get(i).habilidades = habilidades;
             }

@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.lang.Math;
 
 @WebServlet(
-    name = "crearProducto",
-    urlPatterns = {"/crear"}
+    name = "leeProducto",
+    urlPatterns = {"/leer"}
 )
 
 public class CrearProducto extends HttpServlet {
@@ -21,33 +21,32 @@ public class CrearProducto extends HttpServlet {
 
         Unico unico = Unico.getInstance();
 
-        int codigo = Intger.parseInt(req.getParameter("codigo"));
-        String nombre = req.getParameter("nombre");
-        String descripcion = req.getParameter("descripcion");
-        int valorUni = Intger.parseInt(req.getParameter("valorUni"));
-        int cantidad = Intger.parseInt(req.getParameter("cantidad"));
+        int codigo = Integer.parseInt(req.getParameter(("codigo"));
+        
 
-        String rpta = "ya existe un producto con el codigo " + codigo;
-        String rpta1 = "Se ha creado un producto con el codigo" + codigo;
+        String rpta = "NO existe un producto con el codigo " + codigo;
+        String rpta1 = ;
 
         if (unico.buscarProducto(codigo).getCodigo() == -100){
-            unico.crearProducto(codigo,nombre, descripcion, valorUni,cantidad);
-            ServletOutputStream out = resp.getOutputStream();
-            out.write(rpta1.getBytes());
-
-            out.flush();
-            out.close();
-
-        }else{
             ServletOutputStream out = resp.getOutputStream();
             out.write(rpta.getBytes());
 
             out.flush();
             out.close();
+
+        }else{
+            
+            rpta1 = "Codigo : " + unico.buscarProducto(codigo).codigo + "Nombre : " unico.buscarProducto(codigo).nombre + 
+            "Descripcion : " + unico.buscarProducto(codigo).descripcion + "Valor por Unidad : " + unico.buscarProducto(codigo).valorUni
+            + "Cantidad : " + unico.buscarProducto(codigo).cantidad;
+
+
+            ServletOutputStream out = resp.getOutputStream();
+            out.write(rpta1.getBytes());
+
+            out.flush();
+            out.close();
         }
-
-        
-
 
     }
 

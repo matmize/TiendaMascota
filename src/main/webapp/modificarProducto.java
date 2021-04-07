@@ -21,17 +21,17 @@ public class CrearProducto extends HttpServlet {
 
         Unico unico = Unico.getInstance();
 
-        int codigo = Intger.parseInt(req.getParameter("codigo"));
-        String nombre = req.getParameter("nombre");
-        String descripcion = req.getParameter("descripcion");
-        int valorUni = Intger.parseInt(req.getParameter("valorUni"));
-        int cantidad = Intger.parseInt(req.getParameter("cantidad"));
+        int codigo = Intger.parseInt(req.getParameter("codigo1"));
+        String nombre = req.getParameter("nombre1");
+        String descripcion = req.getParameter("descripcion1");
+        int valorUni = Intger.parseInt(req.getParameter("valorUni1"));
+        int cantidad = Intger.parseInt(req.getParameter("cantidad1"));
 
-        String rpta = "ya existe un producto con el codigo " + codigo;
-        String rpta1 = "Se ha creado un producto con el codigo" + codigo;
+        String rpta = "No existe un producto con el codigo " + codigo;
+        String rpta1 = "Se ha editado el producto con el codigo" + codigo;
 
         if (unico.buscarProducto(codigo).getCodigo() == -100){
-            unico.crearProducto(codigo,nombre, descripcion, valorUni,cantidad);
+            unico.editarProducto(codigo,nombre,descripcion,valorUni,cantidad);
             ServletOutputStream out = resp.getOutputStream();
             out.write(rpta1.getBytes());
 
@@ -54,5 +54,11 @@ public class CrearProducto extends HttpServlet {
 
 }
 
+ if (unico.buscarEmpleado(id).idEmpleado == -100){
+           
+            unico.editarEmpleado(id,nombre,habilidad);
+
+        }
+    
 
     

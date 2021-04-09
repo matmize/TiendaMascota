@@ -14,7 +14,7 @@ import java.lang.Math;
     urlPatterns = {"/crear"}
 )
 
-public class CrearProducto extends HttpServlet {
+public class Producto extends HttpServlet {
     @Override
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{

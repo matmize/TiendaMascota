@@ -21,11 +21,11 @@ public class Producto extends HttpServlet {
 
         Unico unico = Unico.getInstance();
 
-        int codigo = Intger.parseInt(req.getParameter("codigo"));
+        int codigo = Integer.parseInt(req.getParameter("codigo"));
         String nombre = req.getParameter("nombre");
         String descripcion = req.getParameter("descripcion");
-        int valorUni = Intger.parseInt(req.getParameter("valorUni"));
-        int cantidad = Intger.parseInt(req.getParameter("cantidad"));
+        int valorUni = Integer.parseInt(req.getParameter("valorUni"));
+        int cantidad = Integer.parseInt(req.getParameter("cantidad"));
 
         String rpta = "ya existe un producto con el codigo " + codigo;
         String rpta1 = "Se ha creado un producto con el codigo" + codigo;
@@ -35,23 +35,18 @@ public class Producto extends HttpServlet {
             ServletOutputStream out = resp.getOutputStream();
             out.write(rpta1.getBytes());
 
-            out.flush();
-            out.close();
+            
 
         }else{
             ServletOutputStream out = resp.getOutputStream();
             out.write(rpta.getBytes());
 
-            out.flush();
-            out.close();
+            
         }
 
-        
-
-
+        out.flush();
+        out.close();
     }
-
-
 }
 
 

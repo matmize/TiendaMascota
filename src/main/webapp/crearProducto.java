@@ -14,7 +14,7 @@ import java.lang.Math;
     urlPatterns = {"/crear"}
 )
 
-public class Producto extends HttpServlet {
+public class crearProducto extends HttpServlet {
     @Override
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
@@ -26,6 +26,7 @@ public class Producto extends HttpServlet {
         String descripcion = req.getParameter("descripcion");
         int valorUni = Integer.parseInt(req.getParameter("valorUni"));
         int cantidad = Integer.parseInt(req.getParameter("cantidad"));
+        ServletOutputStream out;
 
         String rpta = "ya existe un producto con el codigo " + codigo;
         String rpta1 = "Se ha creado un producto con el codigo" + codigo;

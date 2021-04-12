@@ -25,7 +25,7 @@ public class CrearProducto extends HttpServlet {
         
 
         String rpta = "NO existe un producto con el codigo " + codigo;
-        String rpta1 = ;
+        String rpta1 = "";
 
         if (unico.buscarProducto(codigo).getCodigo() == -100){
             ServletOutputStream out = resp.getOutputStream();

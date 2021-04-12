@@ -54,11 +54,7 @@ public class CrearProducto extends HttpServlet {
 
 }
 
- if (unico.buscarEmpleado(id).idEmpleado == -100){
-           
-            unico.editarEmpleado(id,nombre,habilidad);
 
-        }
     
 
     

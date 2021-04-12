@@ -28,23 +28,22 @@ public class eliminarProducto extends HttpServlet {
         String rpta1 = " Se ha eliminado el producto con el codigo " + codigo;
 
         if (unico.buscarProducto(codigo).getCodigo() == -100){
-            unico.eliminarProducto(codigo).getCodigo();
+            unico.eliminarProducto(codigo);
             ServletOutputStream out = resp.getOutputStream();
             out.write(rpta1.getBytes());
 
-            out.flush();
-            out.close();
+            
 
         }else{
             ServletOutputStream out = resp.getOutputStream();
             out.write(rpta.getBytes());
 
-            out.flush();
-            out.close();
+            
         }
 
         
-
+        out.flush();
+        out.close();
 
     }
 

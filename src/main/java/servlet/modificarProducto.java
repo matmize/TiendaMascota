@@ -32,7 +32,7 @@ public class modificarProducto extends HttpServlet {
         ServletOutputStream out;
 
 
-        if (unico.buscarProducto(codigo).getCodigo() == -100){
+        if (unico.buscarProducto(codigo).getCodigo() != -100){
             unico.editarProducto(codigo,nombre1,descripcion1,valorUni1,cantidad1);
             out = resp.getOutputStream();
             out.write(rpta1.getBytes());

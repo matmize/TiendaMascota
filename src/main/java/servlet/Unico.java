@@ -65,7 +65,7 @@ public class Unico{
 
     }
 
-    public void editarProducto(int codigo, String nombre,String descripcion,int valorUni,int cantidad){
+    public void editarProducto(int codigo, String nombre1,String descripcion1,int valorUni1,int cantidad1){
         
         for  (int i = 0; i < productos.size(); i++){
             if (codigo == productos.get(i).getCodigo()){

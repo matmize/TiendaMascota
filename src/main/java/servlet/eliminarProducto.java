@@ -24,11 +24,11 @@ public class eliminarProducto extends HttpServlet {
         int codigo = Integer.parseInt(req.getParameter("codigo"));
         
 
-        String rpta = "no existe un producto con el codigo " + codigo;
-        String rpta1 = "Se ha eliminado el producto con el codigo" + codigo;
+        String rpta = " No existe un producto con el codigo " + codigo;
+        String rpta1 = " Se ha eliminado el producto con el codigo " + codigo;
 
         if (unico.buscarProducto(codigo).getCodigo() == -100){
-            unico.eliminarProducto(codigo);
+            unico.eliminarProducto(codigo).getCodigo();
             ServletOutputStream out = resp.getOutputStream();
             out.write(rpta1.getBytes());
 

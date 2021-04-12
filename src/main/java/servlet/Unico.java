@@ -70,10 +70,14 @@ public class Unico{
         for  (int i = 0; i < productos.size(); i++){
             if (codigo == productos.get(i).getCodigo()){
                 
-                productos.get(i).getNombre() = nombre1; 
-                productos.get(i).getDescripcion() = descripcion1;
-                productos.get(i).getValorUni() = valorUni1;
-                productos.get(i).getCantidad() = cantidad1;
+
+                Producto copia = productos.get(i);
+                copia.setNombre(nombre1);
+                copia.setDescripcion(descripcion1);
+                copia.setValorUni(valorUni1);
+                copia.setCantidad(cantidad1);
+
+            
             }
 
         }

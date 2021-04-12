@@ -29,25 +29,26 @@ public class modificarProducto extends HttpServlet {
 
         String rpta = "No existe un producto con el codigo " + codigo;
         String rpta1 = "Se ha editado el producto con el codigo" + codigo;
+        ServletOutputStream out;
+
 
         if (unico.buscarProducto(codigo).getCodigo() == -100){
             unico.editarProducto(codigo,nombre1,descripcion1,valorUni1,cantidad1);
-            ServletOutputStream out = resp.getOutputStream();
+            out = resp.getOutputStream();
             out.write(rpta1.getBytes());
 
-            out.flush();
-            out.close();
+            
 
         }else{
-            ServletOutputStream out = resp.getOutputStream();
+            out = resp.getOutputStream();
             out.write(rpta.getBytes());
 
-            out.flush();
-            out.close();
+           
         }
 
         
-
+        out.flush();
+        out.close();
 
     }
 

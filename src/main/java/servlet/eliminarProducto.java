@@ -27,15 +27,17 @@ public class eliminarProducto extends HttpServlet {
         String rpta = " No existe un producto con el codigo " + codigo;
         String rpta1 = " Se ha eliminado el producto con el codigo " + codigo;
 
+        ServletOutputStream out;
+
         if (unico.buscarProducto(codigo).getCodigo() == -100){
             unico.eliminarProducto(codigo);
-            ServletOutputStream out = resp.getOutputStream();
+            out = resp.getOutputStream();
             out.write(rpta1.getBytes());
 
             
 
         }else{
-            ServletOutputStream out = resp.getOutputStream();
+            out = resp.getOutputStream();
             out.write(rpta.getBytes());
 
             

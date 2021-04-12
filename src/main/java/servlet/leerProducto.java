@@ -38,9 +38,9 @@ public class leerProducto extends HttpServlet {
 
         }else{
             
-            rpta1 = "Codigo : " + unico.buscarProducto(codigo).getCodigo + "Nombre : " + unico.buscarProducto(codigo).getNombre + 
-            "Descripcion : " + unico.buscarProducto(codigo).getDescripcion + "Valor por Unidad : " + unico.buscarProducto(codigo).getValorUni
-            + "Cantidad : " + unico.buscarProducto(codigo).getCantidad;
+            rpta1 = "Codigo : " + unico.buscarProducto(getCodigo).codigo + "Nombre : " + unico.buscarProducto(getNombre).codigo + 
+            "Descripcion : " + unico.buscarProducto(getDescripcion).codigo + "Valor por Unidad : " + unico.buscarProducto(getValorUni).codigo
+            + "Cantidad : " + unico.buscarProducto(getCantidad).codigo;
 
 
             ServletOutputStream out = resp.getOutputStream();

@@ -29,7 +29,7 @@ public class eliminarProducto extends HttpServlet {
 
         ServletOutputStream out;
 
-        if (unico.buscarProducto(codigo).getCodigo() == -100){
+        if (unico.buscarProducto(codigo).getCodigo() != -100){
             unico.eliminarProducto(codigo);
             out = resp.getOutputStream();
             out.write(rpta1.getBytes());

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.lang.Math;
 
 @WebServlet(
-    name = "myServel",
+    name = "crearProducto",
     urlPatterns = {"/crear"}
 )
 

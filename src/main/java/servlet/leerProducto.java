@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.lang.Math;
 
 @WebServlet(
-    name = "leeProducto",
+    name = "leerProducto",
     urlPatterns = {"/leer"}
 )
 

@@ -14,7 +14,7 @@ import java.lang.Math;
     urlPatterns = {"/leer"}
 )
 
-public class CrearProducto extends HttpServlet {
+public class leerProducto extends HttpServlet {
     @Override
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
@@ -36,9 +36,9 @@ public class CrearProducto extends HttpServlet {
 
         }else{
             
-            rpta1 = "Codigo : " + unico.buscarProducto(codigo).codigo + "Nombre : " + unico.buscarProducto(codigo).nombre + 
-            "Descripcion : " + unico.buscarProducto(codigo).descripcion + "Valor por Unidad : " + unico.buscarProducto(codigo).valorUni
-            + "Cantidad : " + unico.buscarProducto(codigo).cantidad;
+            rpta1 = "Codigo : " + unico.buscarProducto(odigo).getCodigo + "Nombre : " + unico.buscarProducto(codigo).getNombre + 
+            "Descripcion : " + unico.buscarProducto(codigo).getDescripcion + "Valor por Unidad : " + unico.buscarProducto(codigo).getValorUni
+            + "Cantidad : " + unico.buscarProducto(codigo).getCantidad;
 
 
             ServletOutputStream out = resp.getOutputStream();

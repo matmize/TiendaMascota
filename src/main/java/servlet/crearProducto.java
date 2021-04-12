@@ -33,13 +33,13 @@ public class crearProducto extends HttpServlet {
 
         if (unico.buscarProducto(codigo).getCodigo() == -100){
             unico.crearProducto(codigo,nombre, descripcion, valorUni,cantidad);
-            ServletOutputStream out = resp.getOutputStream();
+            out = resp.getOutputStream();
             out.write(rpta1.getBytes());
 
             
 
         }else{
-            ServletOutputStream out = resp.getOutputStream();
+            out = resp.getOutputStream();
             out.write(rpta.getBytes());
 
             

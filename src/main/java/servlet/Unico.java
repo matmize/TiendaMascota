@@ -74,7 +74,8 @@ public class Unico{
                 productos.get(i).getDescripcion() = descripcion1;
                 productos.get(i).getValorUni() = valorUni1;
                 productos.get(i).getCantidad() = cantidad1;
-        }
+            }
 
+        }
     }
 }

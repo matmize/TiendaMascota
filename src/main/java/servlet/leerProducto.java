@@ -21,7 +21,7 @@ public class CrearProducto extends HttpServlet {
 
         Unico unico = Unico.getInstance();
 
-        int codigo = Integer.parseInt(req.getParameter(("codigo"));
+        int codigo = Integer.parseInt(req.getParameter(("codigo")));
         
 
         String rpta = "NO existe un producto con el codigo " + codigo;
@@ -36,7 +36,7 @@ public class CrearProducto extends HttpServlet {
 
         }else{
             
-            rpta1 = "Codigo : " + unico.buscarProducto(codigo).codigo + "Nombre : " unico.buscarProducto(codigo).nombre + 
+            rpta1 = "Codigo : " + unico.buscarProducto(codigo).codigo + "Nombre : " + unico.buscarProducto(codigo).nombre + 
             "Descripcion : " + unico.buscarProducto(codigo).descripcion + "Valor por Unidad : " + unico.buscarProducto(codigo).valorUni
             + "Cantidad : " + unico.buscarProducto(codigo).cantidad;
 

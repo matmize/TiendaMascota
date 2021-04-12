@@ -1,7 +1,7 @@
 package servlet;
 import java.io.IOException;
 
-import class Producto;
+import servlet.Producto;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;

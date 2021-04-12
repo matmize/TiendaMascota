@@ -21,11 +21,11 @@ public class modificarProducto extends HttpServlet {
 
         Unico unico = Unico.getInstance();
 
-        int codigo = Intger.parseInt(req.getParameter("codigo1"));
+        int codigo = Integer.parseInt(req.getParameter("codigo1"));
         String nombre = req.getParameter("nombre1");
         String descripcion = req.getParameter("descripcion1");
-        int valorUni = Intger.parseInt(req.getParameter("valorUni1"));
-        int cantidad = Intger.parseInt(req.getParameter("cantidad1"));
+        int valorUni = Integer.parseInt(req.getParameter("valorUni1"));
+        int cantidad = Integer.parseInt(req.getParameter("cantidad1"));
 
         String rpta = "No existe un producto con el codigo " + codigo;
         String rpta1 = "Se ha editado el producto con el codigo" + codigo;

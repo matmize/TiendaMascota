@@ -1,6 +1,8 @@
 package servlet;
 import java.io.IOException;
 
+import class Producto;
+
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.annotation.WebServlet;
@@ -36,7 +38,7 @@ public class leerProducto extends HttpServlet {
 
         }else{
             
-            rpta1 = "Codigo : " + unico.buscarProducto(odigo).getCodigo + "Nombre : " + unico.buscarProducto(codigo).getNombre + 
+            rpta1 = "Codigo : " + unico.buscarProducto(codigo).getCodigo + "Nombre : " + unico.buscarProducto(codigo).getNombre + 
             "Descripcion : " + unico.buscarProducto(codigo).getDescripcion + "Valor por Unidad : " + unico.buscarProducto(codigo).getValorUni
             + "Cantidad : " + unico.buscarProducto(codigo).getCantidad;
 

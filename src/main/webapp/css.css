@@ -1,0 +1,22 @@
+body{
+	background: aqua ;
+}
+h1{
+	color:purple;
+}
+h3{
+    color:black;
+}
+form{
+	position :relative;
+	top :450px;
+	left :700px;
+}
+h1 {
+	position:relative;
+
+}
+img {
+	position :relative;
+	
+}

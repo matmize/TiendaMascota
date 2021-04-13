@@ -2,10 +2,14 @@ body{
 	background: aqua ;
 }
 h1{
-	color:purple;
+    color:purple;
+    position: relative;
+    left: 500px;
 }
 h3{
-    color:black;
+    color:red;
+    position: relative;
+    left: 500px;
 }
 form{
 	position :relative;
@@ -13,7 +17,8 @@ form{
 	left :700px;
 }
 h1 {
-	position:relative;
+    position:relative;
+    left:500px;
 
 }
 img {
@@ -21,10 +26,10 @@ img {
 	
 }
 div.section{
-	height:520px;
-	width :200px;
-	border :3px solid black;
-	margin : 13px;
+	height:20px;
+	width :150px;
+	border :1.5px solid black;
+	margin : 7px;
 	float:left;
 	
 }

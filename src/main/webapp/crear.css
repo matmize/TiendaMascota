@@ -7,16 +7,6 @@ h1{
     left: 400px;
 }
 
-form{
-	position :relative;
-    left :600px;
-    height: 700px;
-}
-h1 {
-    position:relative;
-    left:500px;
-
-}
 img {
     position :relative;
     left: 500px;
@@ -24,3 +14,11 @@ img {
     height: auto;
 	
 }
+
+form{
+	position :relative;
+    left :600px;
+    height: 700px;
+}
+
+

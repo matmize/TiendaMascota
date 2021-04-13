@@ -22,14 +22,16 @@ h1 {
 
 }
 img {
-	position :relative;
+    position :relative;
+    left: 500px;
 	
 }
 div.section{
 	height:20px;
 	width :150px;
-	border :1.5px solid black;
+	border :3px solid black;
 	margin : 7px;
-	float:left;
+    float:left;
+    left: 500px;
 	
 }

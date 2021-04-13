@@ -20,3 +20,11 @@ img {
 	position :relative;
 	
 }
+div.section{
+	height:520px;
+	width :200px;
+	border :3px solid black;
+	margin : 13px;
+	float:left;
+	
+}

@@ -9,7 +9,7 @@ h1{
 
 img {
     position :relative;
-    left: 500px;
+    left: 400px;
     width : 550px;
     height: auto;
 	
@@ -17,7 +17,7 @@ img {
 
 form{
 	position :relative;
-    left :600px;
+    left :500px;
     height: 700px;
 }
 

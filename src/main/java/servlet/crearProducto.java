@@ -44,9 +44,7 @@ public class crearProducto extends HttpServlet {
 
             
         }
-        out.println("<body>");
-            out.println("<a class= "boton"  href= "index.html" >Volver</a>");
-        out.println ("</body>");
+        
         out.flush();
         out.close();
     }
